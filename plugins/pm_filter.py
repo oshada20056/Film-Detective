@@ -85,7 +85,7 @@ async def next_page(bot, query):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"[{get_size(file.file_size)}]-💞-{file.file_name}", callback_data=f'files#{file.file_id}'
+                    text=f"[{get_size(file.file_size)}]-🍒-{file.file_name}", callback_data=f'files#{file.file_id}'
                 ),
             ]
             for file in files
@@ -178,13 +178,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     title = chat.title
                 except:
                     await query.message.edit_text("Make sure I'm present in your group!!", quote=True)
-                    return await query.answer('👨‍💻𝙳𝙰𝚁𝙺 𝙳𝙴𝚅𝙸𝙻 𝙱𝙾𝚃𝚉👩‍💻')
+                    return await query.answer('🎈𝖥𝗂𝗅𝗆 𝖲𝗍𝗎𝖽𝗂𝗈🎈')
             else:
                 await query.message.edit_text(
                     "I'm not connected to any groups!\nCheck /connections or connect to any groups",
                     quote=True
                 )
-                return await query.answer('👨‍💻𝙳𝙰𝚁𝙺 𝙳𝙴𝚅𝙸𝙻 𝙱𝙾𝚃𝚉👩‍💻')
+                return await query.answer('🎈𝖥𝗂𝗅𝗆 𝖲𝗍𝗎𝖽𝗂𝗈🎈')
 
         elif chat_type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
             grp_id = query.message.chat.id
@@ -266,7 +266,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             )
         else:
             await query.message.edit_text('Some error occurred!!', parse_mode=enums.ParseMode.MARKDOWN)
-        return await query.answer('👨‍💻𝙳𝙰𝚁𝙺 𝙳𝙴𝚅𝙸𝙻 𝙱𝙾𝚃𝚉👩‍💻')
+        return await query.answer('🎈𝖥𝗂𝗅𝗆 𝖲𝗍𝗎𝖽𝗂𝗈🎈')
     elif "disconnect" in query.data:
         await query.answer()
 
@@ -289,7 +289,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 f"Some error occurred!!",
                 parse_mode=enums.ParseMode.MARKDOWN
             )
-        return await query.answer('👨‍💻𝙳𝙰𝚁𝙺 𝙳𝙴𝚅𝙸𝙻 𝙱𝙾𝚃𝚉👩‍💻')
+        return await query.answer('🎈𝖥𝗂𝗅𝗆 𝖲𝗍𝗎𝖽𝗂𝗈🎈')
     elif "deletecb" in query.data:
         await query.answer()
 
@@ -307,7 +307,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 f"Some error occurred!!",
                 parse_mode=enums.ParseMode.MARKDOWN
             )
-        return await query.answer('👨‍💻𝙳𝙰𝚁𝙺 𝙳𝙴𝚅𝙸𝙻 𝙱𝙾𝚃𝚉👩‍💻')
+        return await query.answer('🎈𝖥𝗂𝗅𝗆 𝖲𝗍𝗎𝖽𝗂𝗈🎈')
     elif query.data == "backcb":
         await query.answer()
 
@@ -318,7 +318,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await query.message.edit_text(
                 "There are no active connections!! Connect to some groups first.",
             )
-            return await query.answer('👨‍💻𝙳𝙰𝚁𝙺 𝙳𝙴𝚅𝙸𝙻 𝙱𝙾𝚃𝚉👩‍💻')
+            return await query.answer('🎈𝖥𝗂𝗅𝗆 𝖲𝗍𝗎𝖽𝗂𝗈🎈')
         buttons = []
         for groupid in groupids:
             try:
@@ -427,25 +427,18 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('➕ ADD ME TO YOUR GROUPS ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('🔎 SEARCH INLINE 🔍', switch_inline_query_current_chat='')
+            InlineKeyboardButton('🔎 𝖲𝖾𝖺𝗋𝖼𝗁 𝖨𝗇𝗅𝗂𝗇𝖾 🔍', switch_inline_query_current_chat='')
             ],[
-            InlineKeyboardButton('🤖 ᗪᗩᖇK ᗪEᐯIᒪ ᗷOTᘔ 🤖', url='https://t.me/DarkDevilBotz')
-            ],[
-            InlineKeyboardButton('🔰 FILM GROUP 🔰', url='https://t.me/DarkNetflixGroup'),
-            InlineKeyboardButton('♨️ MOVIES ♨️', url='https://t.me/DarkNetflixPublic')
-            ],[
-            InlineKeyboardButton('😇 MORE 😇', callback_data='help'),
-            InlineKeyboardButton('📛 ABOUT 📛', callback_data='about')
-            ],[
-            InlineKeyboardButton('🍭 TEAM DARK DEVIL 🍭', url='https://t.me/TeamDarkDevil')
-        ]]
+            InlineKeyboardButton('🎈𝖬𝗈𝗋𝖾🎈', callback_data='help'),
+            InlineKeyboardButton('🎈𝖠𝖻𝗈𝗎𝗍🎈', callback_data='about')
+            ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.START_TXT.format(query.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-        await query.answer('👨‍💻𝙳𝙰𝚁𝙺 𝙳𝙴𝚅𝙸𝙻 𝙱𝙾𝚃𝚉👩‍💻')
+        await query.answer('🎈𝖥𝗂𝗅𝗆 𝖲𝗍𝗎𝖽𝗂𝗈🎈')
     elif query.data == "help":
         buttons = [[
             InlineKeyboardButton('🕹️ MANUAL FILTER 🕹️', callback_data='manuelfilter'),
@@ -465,11 +458,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('📣 UPDATES 📣', url='https://t.me/DarkDevilBotz'),
-            InlineKeyboardButton('💻 SOURCE 💻', callback_data='source')
+            InlineKeyboardButton('🎈𝖴𝗉𝖽𝖺𝗍𝖾𝗌🎈', url='('https://t.me/Filmstudiodl'),
+            InlineKeyboardButton('🎈𝖲𝗈𝗎𝗋𝖼𝖾𝗌🎈', callback_data='source')
         ], [
-            InlineKeyboardButton('🏡 HOME 🏡', callback_data='start'),
-            InlineKeyboardButton('⛔ CLOSE ⛔', callback_data='close_data')
+            InlineKeyboardButton('🎈𝖧𝗈𝗆𝖾🎈', callback_data='start'),
+            InlineKeyboardButton('🎈𝖢𝗅𝗈𝗌𝖾🎈', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -592,7 +585,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
         if str(grp_id) != str(grpid):
             await query.message.edit("Your Active Connection Has Been Changed. Go To /settings.")
-            return await query.answer('👨‍💻𝙳𝙰𝚁𝙺 𝙳𝙴𝚅𝙸𝙻 𝙱𝙾𝚃𝚉👩‍💻')
+            return await query.answer('🎈𝖥𝗂𝗅𝗆 𝖲𝗍𝗎𝖽𝗂𝗈🎈')
 
         if status == "True":
             await save_group_settings(grpid, set_type, False)
@@ -639,7 +632,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ]
             reply_markup = InlineKeyboardMarkup(buttons)
             await query.message.edit_reply_markup(reply_markup)
-    await query.answer('👨‍💻𝙳𝙰𝚁𝙺 𝙳𝙴𝚅𝙸𝙻 𝙱𝙾𝚃𝚉👩‍💻')
+    await query.answer('🎈𝖥𝗂𝗅𝗆 𝖲𝗍𝗎𝖽𝗂𝗈🎈')
 
 
 async def auto_filter(client, msg, spoll=False):
@@ -668,7 +661,7 @@ async def auto_filter(client, msg, spoll=False):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"[{get_size(file.file_size)}]-💠-{file.file_name}", callback_data=f'{pre}#{file.file_id}'
+                    text=f"[{get_size(file.file_size)}]-🍒-{file.file_name}", callback_data=f'{pre}#{file.file_id}'
                 ),
             ]
             for file in files
@@ -735,7 +728,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"Rᴇǫᴜᴇsᴛᴇᴅ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ : <code>{search}</code>\n\n\n😌 ɪꜰ ᴛʜᴇ ᴍᴏᴠɪᴇ ʏᴏᴜ ᴀʀᴇ ʟᴏᴏᴋɪɴɢ ꜰᴏʀ ɪs ɴᴏᴛ ᴀᴠᴀɪʟᴀʙʟᴇ ᴛʜᴇɴ ʟᴇᴀᴠᴇ ᴀ ᴍᴇssᴀɢᴇ ʙᴇʟᴏᴡ 😎 \n\nᴇxᴀᴍᴘʟᴇ : \n\nᴇɴᴛᴇʀ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ (ʏᴇᴀʀ) ᴛᴀɢ @Film_Detective_Bot"
+        cap = f"Rᴇǫᴜᴇsᴛᴇᴅ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ : <code>{search}</code>\n\n\n😌 ɪꜰ ᴛʜᴇ ᴍᴏᴠɪᴇ ʏᴏᴜ ᴀʀᴇ ʟᴏᴏᴋɪɴɢ ꜰᴏʀ ɪs ɴᴏᴛ ᴀᴠᴀɪʟᴀʙʟᴇ ᴛʜᴇɴ ʟᴇᴀᴠᴇ ᴀ ᴍᴇssᴀɢᴇ ʙᴇʟᴏᴡ 😎 \n\nᴇxᴀᴍᴘʟᴇ : \n\nᴇɴᴛᴇʀ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ (ʏᴇᴀʀ) ᴛᴀɢ @Filmstudiodl"
     if imdb and imdb.get('poster'):
         try:
             hehe =  await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],

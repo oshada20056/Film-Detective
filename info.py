@@ -20,7 +20,7 @@ BOT_TOKEN = environ.get('BOT_TOKEN', "")
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
-PICS = (environ.get('PICS', 'https://telegra.ph/file/7483f17aba9b8b9fe3fd2.jpg https://telegra.ph/file/2b25fe26acfe2b03c498b.jpg https://telegra.ph/file/cbc1b02c3eccffa4338e7.jpg https://telegra.ph/file/afa3857624ea73d75b952.jpg https://telegra.ph/file/d9aefbb2fad9acf2167ef.jpg https://telegra.ph/file/a2249ed4e7059b284c00d.jpg https://telegra.ph/file/4e46577784df1d6b7fc68.jpg https://telegra.ph/file/d3775a0ffb2574034f4f3.jpg https://telegra.ph/file/a380df4cd7f89db9b3ec4.jpg')).split()
+PICS = (environ.get('PICS', 'https://te.legra.ph/file/c4c1d4f95fd95772541e3.jpg')).split()
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
@@ -43,11 +43,11 @@ SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), False)
-CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "🤩<b>ᴊᴏɪɴ [ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ](https://t.me/DarkDevilBotz)</b>😍\n\n📂𝙵𝙸𝙻𝙴 : <code>{file_name}</code>\n\n📼𝚂𝙸𝚉𝙴 : <i>{file_size}<i>\n\n😈𝙾𝚆𝙽𝙴𝚁 :<a href=https://t.me/DARKDevilV2> 𝙳𝙰𝚁𝙺 𝙳𝙴𝚅𝙸𝙻</a>")
-BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", "🤩<b>ᴊᴏɪɴ [ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ](https://t.me/DarkDevilBotz)</b>😍\n\n📂𝙵𝙸𝙻𝙴 : <code>{file_name}</code>\n\n📼𝚂𝙸𝚉𝙴 : <i>{file_size}<i>\n\n😈𝙾𝚆𝙽𝙴𝚁 :<a href=https://t.me/DARKDevilV2> 𝙳𝙰𝚁𝙺 𝙳𝙴𝚅𝙸𝙻</a>")
-IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "🤩ʜᴇʏ, {message.from_user.mention} 𝙱𝚁𝙾\n ᴀʀᴇ ʏᴏᴜ ʟᴏᴏᴋɪɴɢ ꜰᴏʀ ᴛʜɪꜱ ᴍᴏᴠɪᴇ?\n 👉 {query} 👈\n\n<b>♥️𝚃𝙸𝚃𝙻𝙴</b>: <a href={url}>{title}</a>\n🎭 𝙶𝙴𝙽𝚁𝙴𝚂: {genres}\n📆 𝚈𝙴𝙰𝚁: <a href={url}/releaseinfo>{year}</a>\n🌟 𝚁𝙰𝚃𝙸𝙽𝙶: <a href={url}/ratings>{rating}</a> / 10 (𝙱𝙰𝚂𝙴𝙳 𝙾𝙽 {votes} 𝚄𝚂𝙴𝚁 𝚁𝙰𝚃𝙸𝙽𝙶𝚂.)\n💽 𝚁𝚄𝙽𝚃𝙸𝙼𝙴: {runtime} Minutes\n📆 𝚁𝙴𝙻𝙴𝙰𝚂𝙴𝙳 : {release_date}\n🌍 𝙲𝙾𝚄𝙽𝚃𝚁𝙸𝙴𝚂 : <code>{countries}</code>\n\n☕𝙿𝙾𝚆𝙴𝚁𝙳 𝙱𝚈☕\n <a href=https://t.me/DarkDevilBotz>©️ᴅᴀʀᴋ ᴅᴇᴠɪʟ ʙᴏᴛᴢ</a>\n <a href=https://t.me/TeamDarkDevil>©️ᴛᴇᴀᴍ ᴅᴀʀᴋ ᴅᴇᴠɪʟ</a>")
+CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "🎈<b>ᴊᴏɪɴ [ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ](https://t.me/FilmStudiohub2)</b>💤\n\n📂𝐹𝑖𝑙𝑒 : <code>{file_name}</code>\n\n📼𝑆𝑖𝑧𝑒 : <i>{file_size}<i>\n\n𝐺𝑟𝑜𝑢𝑝📥 :<a href=https://t.me/DARKDevilV2> 𝙳𝙰𝚁𝙺 𝙳𝙴𝚅𝙸𝙻</a>")
+BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", "🎈<b>ᴊᴏɪɴ [ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ](https://t.me/FilmStudiohub2)</b>💤\n\n📂𝙵𝙸𝙻𝙴 : <code>{file_name}</code>\n\n📼𝚂𝙸𝚉𝙴 : <i>{file_size}<i>\n\n😈𝙾𝚆𝙽𝙴𝚁 :<a href=https://t.me/DARKDevilV2> 𝙳𝙰𝚁𝙺 𝙳𝙴𝚅𝙸𝙻</a>")
+IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "🎈ʜᴇʏ, {message.from_user.mention} 𝙱𝚁𝙾\n ᴀʀᴇ ʏᴏᴜ ʟᴏᴏᴋɪɴɢ ꜰᴏʀ ᴛʜɪꜱ ᴍᴏᴠɪᴇ?\n 👉 {query} 👈\n\n<b>♥️𝑇𝑖𝑡𝑙𝑒</b>: <a href={url}>{title}</a>\n🎭 𝐺𝑒𝑛𝑒𝑟𝑒𝑠: {genres}\n📆 𝑌𝑒𝑎𝑟: <a href={url}/releaseinfo>{year}</a>\n🌟 𝑅𝑎𝑡𝑖𝑛𝑔: <a href={url}/ratings>{rating}</a> / 10 (𝐵𝑎𝑠𝑒𝑑 𝑂𝑛 {votes} 𝑈𝑠𝑒𝑟 𝑅𝑎𝑡𝑖𝑛𝑔𝑠.)\n💽 𝑅𝑢𝑛𝑡𝑖𝑚𝑒: {runtime} Minutes\n📆 𝑅𝑒𝑙𝑒𝑎𝑠𝑒 : {release_date}\n🌍 𝐶𝑜𝑢𝑛𝑡𝑟𝑖𝑒𝑠: <code>{countries}</code>\n\n <a href=https://t.me/FilmStudiohub2>©𝖥𝗂𝗅𝗆𝖲𝗍𝗎𝖽𝗂𝗈</a>")
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
-SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "False"), True)
+SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "Ture"), True)
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
 INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
 FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).split()]
@@ -75,8 +75,8 @@ if SELF_DELETE == "True":
 
      # Download Tutorial Button #
 DOWNLOAD_TEXT_NAME = "📥 HOW TO DOWNLOAD 📥"
-DOWNLOAD_TEXT_URL = "https://t.me/TeamDarkDevil"
+DOWNLOAD_TEXT_URL = "https://t.me/FilmStudiohub2"
 
      # Custom Caption Under Button #
 CAPTION_BUTTON = "Follow"
-CAPTION_BUTTON_URL = "https://t.me/DarkDevilBotz"
+CAPTION_BUTTON_URL = "https://t.me/FilmStudiohub2"

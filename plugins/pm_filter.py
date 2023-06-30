@@ -460,7 +460,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('🎈𝖴𝗉𝖽𝖺𝗍𝖾𝗌🎈', url=('https://t.me/Filmstudiodl')
             InlineKeyboardButton('🎈𝖲𝗈𝗎𝗋𝖼𝖾𝗌🎈', callback_data='source')
-        ], [
+        ]], [
             InlineKeyboardButton('🎈𝖧𝗈𝗆𝖾🎈', callback_data='start'),
             InlineKeyboardButton('🎈𝖢𝗅𝗈𝗌𝖾🎈', callback_data='close_data')
         ]]

@@ -12,24 +12,23 @@ def is_enabled(value, default):
         return default
 
 class script(object):
-    START_TXT = """𝙷𝙴𝙻𝙻𝙾 {} 𝙱𝚁𝙾😉,
-𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 <a href=https://t.me/{}>{}</a>, 𝙸 𝙲𝙰𝙽 𝙿𝚁𝙾𝚅𝙸𝙳𝙴 𝙼𝙾𝚅𝙸𝙴𝚂, 𝙹𝚄𝚂𝚃 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝙰𝙽𝙳 𝙼𝙰𝙺𝙴 𝙼𝙴 𝙰𝙳𝙼𝙸𝙽 𝙸𝙽 𝚃𝙷𝙴 𝙶𝚁𝙾𝚄𝙿. 𝚃𝙷𝙴𝙽 𝚈𝙾𝚄 𝚆𝙸𝙻𝙻 𝚂𝙴𝙴 𝙼𝚈 𝙿𝙾𝚆𝙴𝚁𝚉... 😍"""
-    HELP_TXT = """𝙷𝙾𝚆 𝙰𝚁𝙴 𝚈𝙾𝚄 {} 𝙱𝚁𝙾😜
-𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂. 𝙱𝚄𝚃 𝚈𝙾𝚄 𝙲𝙰𝙽 𝙽𝙾𝚃 𝚄𝚂𝙴 𝙰𝙳𝙼𝙸𝙽 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂\n\n𝙼𝚈 𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 𝙸𝚂 <a href=https://t.me/DARKDevilV2>𝙼𝙰𝙻𝙸𝙽𝙳𝚄 𝙽𝙸𝙼𝚂𝙰𝚁𝙰</a> """
-    ABOUT_TXT = """ 🤡 𝙸 𝚊𝚖 <a href=https://t.me/Film_Detective_Bot>𝙵𝙸𝙻𝙼 𝙳𝙴𝚃𝙴𝙲𝚃𝙸𝚅𝙴</a>
-🏅 𝙲𝚁𝙴𝙰𝚃𝙾𝚁: <a href=https://t.me/TeamDarkDevil>𝚃𝙴𝙰𝙼 𝙳𝙰𝚁𝙺 𝙳𝙴𝚅𝙸𝙻</a>
+    START_TXT = """𝘏𝘦𝘭𝘭𝘰𝘸 {} 𝘉𝘳𝘰🍎,
+𝘐'𝘮<a href=https://t.me/{}>{}</a>, 𝘐 𝘊𝘢𝘯 𝘗𝘳𝘰𝘷𝘪𝘥𝘦 𝘔𝘰𝘷𝘪𝘦𝘴,𝘚𝘦𝘳𝘪𝘦𝘴 𝘞𝘪𝘵𝘩 𝘏𝘢𝘳𝘥𝘤𝘰𝘥𝘦 𝘚𝘪𝘯𝘩𝘢𝘭𝘢 𝘚𝘶𝘣𝘵𝘪𝘵𝘭𝘦𝘴\n𝘑𝘶𝘴𝘵 𝘈𝘥𝘥 𝘔𝘦 𝘛𝘰 𝘠𝘰𝘶𝘳 𝘎𝘳𝘰𝘶𝘱 𝘈𝘯𝘥 𝘔𝘢𝘬𝘦 𝘔𝘦 𝘈𝘥𝘮𝘪𝘯 𝘎𝘳𝘰𝘶𝘱 🍒"""
+    HELP_TXT = """𝘏𝘰𝘸 𝘈𝘳𝘦 𝘠𝘰𝘶 {} 𝙱𝚁𝙾😜
+𝘏𝘦𝘳𝘦 𝘐𝘴 𝘔𝘺 𝘏𝘦𝘭𝘱𝘪𝘯𝘨 𝘊𝘰𝘮𝘮𝘢𝘯𝘥\n𝘠𝘰𝘶 𝘊𝘢𝘯'𝘛 𝘜𝘴𝘦 𝘈𝘥𝘮𝘪𝘯𝘯 𝘊𝘰𝘮𝘮𝘢𝘯𝘥\n\n𝘔𝘺 𝘚𝘶𝘱𝘱𝘰𝘳𝘵 𝘎𝘳𝘰𝘶𝘱 <a href=https://t.me/DARKDevilV2>𝙼𝙰𝙻𝙸𝙽𝙳𝚄 𝙽𝙸𝙼𝚂𝙰𝚁𝙰</a> """
+    ABOUT_TXT = """ 🤡 𝙸 𝚊𝚖 <a href=https://t.me/@film_series_download_bot>𝙵𝙸𝙻𝙼 𝙳𝙴𝚃𝙴𝙲𝚃𝙸𝚅𝙴</a>
+🏅 𝙲𝚁𝙴𝙰𝚃𝙾𝚁: <a href=https://t.me/Filmstudiodl>𝘍𝘪𝘭𝘮 𝘚𝘵𝘶𝘥𝘪𝘰</a>
 🥇 𝙻𝙸𝙱𝚁𝙰𝚁𝚈: 𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼
 🥈 𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴: 𝙿𝚈𝚃𝙷𝙾𝙽 𝟹
 🥉 𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴: 𝙼𝙾𝙽𝙶𝙾 𝙳𝙱 𝙵𝚁𝙴𝙴 𝚃𝚁𝙸𝙰𝙻
-🎖️ 𝙱𝙾𝚃 𝚂𝙴𝚁𝚅𝙴𝚁: 𝚅𝙿𝚂
+🎖️ 𝙱𝙾𝚃 𝚂𝙴𝚁𝚅𝙴𝚁: 𝚆𝙷𝙾𝚃𝚃𝙾💤
 🛠 ️𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂: v1.0 [ 𝙱𝙴𝚃𝙰 ]
-👨‍💻 𝙼𝚈 𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 𝙸𝚂 <a href=https://t.me/DARKDevilV2>𝙼𝙰𝙻𝙸𝙽𝙳𝚄 𝙽𝙸𝙼𝚂𝙰𝚁𝙰</a>"""
+👨‍💻 𝙼𝚈 𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 𝙸𝚂 <a href=https://t.me/Filmstudiodl>🍒𝘍𝘪𝘭𝘮 𝘚𝘵𝘶𝘥𝘪𝘰🍒</a>"""
     SOURCE_TXT = """<b>NOTE:</b>
 - This is a privat edition. 
 - Source - locked🔐
 
-<b>👨‍💻DEVELOPERS👩‍💻:</b>
-- <a href=https://t.me/DarkDevilBotz>ᴅᴀʀᴋ ᴅᴇᴠɪʟ ʙᴏᴛᴢ</a>"""
+"""
     MANUELFILTER_TXT = """𝙷𝙴𝙻𝙿: <b>𝙵𝙸𝙻𝚃𝙴𝚁𝚂</b>
 
 - Filter is the feature were users can set automated replies for a particular keyword and film-detective will respond whenever a keyword is found the message
@@ -54,7 +53,7 @@ class script(object):
 3. Buttons should be properly parsed as markdown format
 
 <b>URL buttons:</b>
-<code>[Button Text](buttonurl:https://t.me/film_detective_bot)</code>
+<code>[Button Text](buttonurl:https://t.me/@film_series_download_bot)</code>
 
 <b>Alert buttons:</b>
 <code>[Button Text](buttonalert:This is an alert message)</code>"""
@@ -114,10 +113,10 @@ This module only works for my admins
 ⚔️𝙶𝚁𝙾𝚄𝙿 = {}(<code>{}</code>)
 🎰𝚃𝙾𝚃𝙰𝙻 𝙼𝙴𝙼𝙱𝙴𝚁𝚂= <code>{}</code>
 👽𝙰𝙳𝙳𝙴𝙳 𝙱𝚈 - {}
-©️𝙳𝙰𝚁𝙺 𝙳𝙴𝚅𝙸𝙻 𝙱𝙾𝚃𝚉
+©ꜰɪʟᴍ ꜱᴛᴜᴅɪᴏ
 """
     LOG_TEXT_P = """𝗡𝗘𝗪 𝗠𝗘𝗠𝗕𝗘𝗥
 🆔𝙸𝙳 - <code>{}</code>
 💡𝙽𝙰𝙼𝙴 - {}
-©️𝙳𝙰𝚁𝙺 𝙳𝙴𝚅𝙸𝙻 𝙱𝙾𝚃𝚉
+©ꜰɪʟᴍ ꜱᴛᴜᴅɪᴏ
 """

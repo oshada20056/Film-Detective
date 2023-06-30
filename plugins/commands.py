@@ -24,11 +24,11 @@ async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [
             [
-                InlineKeyboardButton('🤖 ᗪᗩᖇK ᗪEᐯIᒪ ᗷOTᘔ 🤖', url='https://t.me/DarkDevilBotz')
+                InlineKeyboardButton('🍒𝖦𝗋𝗈𝗎𝗉🍒', url='https://t.me/Filmstudiodl')
             ],[
-                InlineKeyboardButton('🔥 TEᗩᗰ ᗪᗩᖇK ᗪEᐯIᒪ 🔥', url='https://t.me/TeamDarkDevil')
+                InlineKeyboardButton('🍒𝖢𝗁𝖺𝗇𝗇𝖾𝗅🍒', url='https://t.me/FilmStudiohub2')
             ],[
-                InlineKeyboardButton('🕵 ᖴIᒪᗰ ᗪETEᑕTIᐯE ️🕵️', url=f"https://t.me/{temp.U_NAME}?start=help"),
+                InlineKeyboardButton('🍒𝖥𝗂𝗅𝗆 𝖲𝗍𝗎𝖽𝗂𝗈 𝖡𝗈𝗍🍒', url=f"https://t.me/{temp.U_NAME}?start=help"),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)

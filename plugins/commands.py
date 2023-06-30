@@ -46,18 +46,11 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('➕ ADD ME TO YOUR GROUPS ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('🔎 SEARCH INLINE 🔍', switch_inline_query_current_chat='')
+            InlineKeyboardButton('🔎 𝖲𝖾𝖺𝗋𝖼𝗁 𝖨𝗇𝗅𝗂𝗇𝖾 🔍', switch_inline_query_current_chat='')
             ],[
-            InlineKeyboardButton('🤖 ᗪᗩᖇK ᗪEᐯIᒪ ᗷOTᘔ 🤖', url='https://t.me/DarkDevilBotz')
-            ],[
-            InlineKeyboardButton('🔰 FILM GROUP 🔰', url='https://t.me/DarkNetflixGroup'),
-            InlineKeyboardButton('♨️ MOVIES ♨️', url='https://t.me/DarkNetflixPublic')
-            ],[
-            InlineKeyboardButton('😇 MORE 😇', callback_data='help'),
-            InlineKeyboardButton('📛 ABOUT 📛', callback_data='about')
-            ],[
-            InlineKeyboardButton('🍭 TEAM DARK DEVIL 🍭', url='https://t.me/TeamDarkDevil')
-        ]]
+            InlineKeyboardButton('🎈𝖬𝗈𝗋𝖾🎈', callback_data='help'),
+            InlineKeyboardButton('🎈𝖠𝖻𝗈𝗎𝗍🎈', callback_data='about')
+            ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
             photo=random.choice(PICS),
@@ -98,18 +91,11 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('➕ ADD ME TO YOUR GROUPS ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('🔎 SEARCH INLINE 🔍', switch_inline_query_current_chat='')
+            InlineKeyboardButton('🔎 𝖲𝖾𝖺𝗋𝖼𝗁 𝖨𝗇𝗅𝗂𝗇𝖾 🔍', switch_inline_query_current_chat='')
             ],[
-            InlineKeyboardButton('🤖 ᗪᗩᖇK ᗪEᐯIᒪ ᗷOTᘔ 🤖', url='https://t.me/DarkDevilBotz')
-            ],[
-            InlineKeyboardButton('🔰 FILM GROUP 🔰', url='https://t.me/DarkNetflixGroup'),
-            InlineKeyboardButton('♨️ MOVIES ♨️', url='https://t.me/DarkNetflixPublic')
-            ],[
-            InlineKeyboardButton('😇 MORE 😇', callback_data='help'),
-            InlineKeyboardButton('📛 ABOUT 📛', callback_data='about')
-            ],[
-            InlineKeyboardButton('🍭 TEAM DARK DEVIL 🍭', url='https://t.me/TeamDarkDevil')
-        ]]
+            InlineKeyboardButton('🎈𝖬𝗈𝗋𝖾🎈', callback_data='help'),
+            InlineKeyboardButton('🎈𝖠𝖻𝗈𝗎𝗍🎈', callback_data='about')
+            ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
             photo=random.choice(PICS),
@@ -336,7 +322,7 @@ async def delete(bot, message):
         if result.deleted_count:
             await msg.edit('File is successfully deleted from database')
         else:
-            # files indexed before https://github.com/DARK-DEVIL-BOTZ/Film-Detective 
+            # files indexed before 
             # have original file name.
             result = await Media.collection.delete_many({
                 'file_name': media.file_name,
@@ -357,12 +343,12 @@ async def delete_all_index(bot, message):
             [
                 [
                     InlineKeyboardButton(
-                        text="👍YES👍", callback_data="autofilter_delete"
+                        text="𝗒𝖾𝗌", callback_data="autofilter_delete"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        text="🔴CANCEL🔴", callback_data="close_data"
+                        text="𝖼𝖺𝗇𝖼𝖾𝗅", callback_data="close_data"
                     )
                 ],
             ]

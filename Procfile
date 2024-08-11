@@ -1,1 +1,1 @@
-worker: python3 Film-Detective.py
+web: python3 Film-Detective.py
